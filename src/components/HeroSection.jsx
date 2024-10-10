@@ -3,7 +3,7 @@ import profile from '../assets/profile.jpg'
 function HeroSection() {
     return (
         <div>
-            <div className="flex flex-wrap my-10 lg:m-16">
+            <div className="flex flex-wrap m-10">
                 <div className="w-full lg:w-1/2 flex flex-wrap">
 
                     <h1 className="text-4xl lg:text-6xl tracking-wider w-full self-end mb-5 text-center lg:text-left">Full-Stack Developer</h1>

@@ -1,6 +1,10 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import { Button } from "@material-tailwind/react";
+import { GitHubLink } from "../assets/text";
+import { LinkedinLink } from "../assets/text";
+import { CvLink } from "../assets/text";
 import {
     Navbar,
     Collapse,
@@ -11,14 +15,14 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 function NavList() {
     return (
-        <ul className=" my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+        <ul className=" my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-3">
             <Typography
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium text-xl"
+                className="p-1 font-medium text-lg lg:text-xl"
             >
-                <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+                <a href="#" className="flex text-right hover:text-blue-500 transition-colors">
                     Home
                 </a>
             </Typography>
@@ -26,7 +30,7 @@ function NavList() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium text-xl"
+                className="p-1 font-medium text-lg lg:text-xl"
             >
                 <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
                     About
@@ -36,7 +40,7 @@ function NavList() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium text-xl"
+                className="p-1 font-medium text-lg lg:text-xl"
             >
                 <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
                     Projects
@@ -46,7 +50,7 @@ function NavList() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium text-xl"
+                className="p-1 font-medium text-lg lg:text-xl"
             >
                 <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
                     Technologies
@@ -56,32 +60,36 @@ function NavList() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium text-xl"
-            >
-                <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-                    Resume
-                </a>
-            </Typography>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-medium text-xl"
+                className="p-1 font-medium text-lg lg:text-xl"
             >
                 <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
                     Contact
                 </a>
             </Typography>
+
             <Typography
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium flex gap-3 text-3xl"
+                className="p-1 font-medium text-lg lg:text-xl"
             >
-                <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+                <a href={CvLink} className=" items-center hover:text-blue-500 transition-colors flex flex-wrap">
+                    <div className="flex w-max items-end">
+                        <Button className="flex text-sm" color="blue" size="sm">Download - CV</Button>
+                    </div>
+                </a>
+            </Typography>
+
+            <Typography
+                as="li"
+                variant="small"
+                color="blue-gray"
+                className="bg p-1 font-medium flex gap-3 text-3xl"
+            >
+                <a href={GitHubLink} target="_blank" className="flex items-center hover:text-blue-500 transition-colors">
                     <FaGithub />
                 </a>
-                <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+                <a href={LinkedinLink} target="_blank" className="flex items-center hover:text-blue-500 transition-colors">
                     <FaLinkedin />
                 </a>
             </Typography>
@@ -105,14 +113,14 @@ export function NavBar() {
     }, []);
 
     return (
-        <div className="mx-5">
+        <div className="">
             <Navbar className="lg:mx-auto bg-white">
                 <div className=" flex items-center justify-between text-blue-gray-900">
                     <Typography
                         as="a"
                         href="#"
                         variant="h6"
-                        className="mr-4 cursor-pointer py-1.5 text-2xl font-bold bg-gradient-to-r from-cyan-600 via-purple-500 to-blue-400 bg-clip-text text-transparent"
+                        className="mr-4 cursor-pointer py-1.5 text-xl lg:text-2xl font-bold bg-gradient-to-r from-cyan-600 via-purple-500 to-blue-400 bg-clip-text text-transparent"
                     >
                         Supun Tharaka
                     </Typography>

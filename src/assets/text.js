@@ -1,0 +1,5 @@
+export const GitHubLink = "https://github.com/Supun-01"
+export const LinkedinLink = "https://www.linkedin.com/in/supun-tharaka-1a9273299/"
+export const CvLink = "https://drive.usercontent.google.com/download?id=1HFq4SgeVQej8x4o7CdfWhiFJRPgE3_MJ&export=download&authuser=0&confirm=t&uuid=077dea5b-7618-4cbc-90e9-dd4a318aba59&at=AN_67v1WqfGHay2NZZGuPljaBF4d:1728573966104"
+export const userName = "Supun-01"
+export const userToken = "#"
