@@ -106,13 +106,13 @@ export function NavBar() {
 
     return (
         <div className="mx-5">
-            <Navbar className="lg:mx-auto">
-                <div className="flex items-center justify-between text-blue-gray-900">
+            <Navbar className="lg:mx-auto bg-white">
+                <div className=" flex items-center justify-between text-blue-gray-900">
                     <Typography
                         as="a"
                         href="#"
                         variant="h6"
-                        className="mr-4 cursor-pointer py-1.5 text-2xl"
+                        className="mr-4 cursor-pointer py-1.5 text-2xl font-bold bg-gradient-to-r from-cyan-600 via-purple-500 to-blue-400 bg-clip-text text-transparent"
                     >
                         Supun Tharaka
                     </Typography>
