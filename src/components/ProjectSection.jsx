@@ -34,20 +34,20 @@ function ProjectSection() {
     }, []);
 
     return (
-        <div className="mx-10 my-20">
+        <div className="">
             {/* Title */}
             <div>
-                <h1 className="text-center text-4xl lg:text-5xl">Projects</h1>
+                <h1 className="text-center text-4xl lg:text-5xl mt-10 lg:mt-10">Projects</h1>
             </div>
 
             {/* Repository List */}
             <div>
-                <ul className='p-10 flex flex-wrap justify-center'>
+                <ul className="flex flex-wrap justify-center">
                     {repos.map((item, index) => (
-                        <li key={index} className=' m-5 w-full lg:w-3/4'> {/* Full width on small screens, 1/3 on medium and up */}
-                            <Card className=" w-full">
+                        <li key={index} className="w-full lg:w-1/3 mt-5">
+                            <Card className="mx-5">
                                 <CardBody>
-                                    <Typography variant="h5" color="blue-gray" className="mb-2">
+                                    <Typography variant="h5" color="blue-gray" className="mb-2 flex">
                                         {item.name}
                                     </Typography>
                                     <Typography>
