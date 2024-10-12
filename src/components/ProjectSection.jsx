@@ -34,10 +34,10 @@ function ProjectSection() {
     }, []);
 
     return (
-        <div className="">
+        <div className="border  mb-5 lg:mb-10 text-white">
             {/* Title */}
             <div>
-                <h1 className="text-center text-4xl lg:text-5xl mt-10 lg:mt-10">Projects</h1>
+                <h1 className="text-center text-4xl lg:text-5xl">Projects</h1>
             </div>
 
             {/* Repository List */}
@@ -45,7 +45,7 @@ function ProjectSection() {
                 <ul className="flex flex-wrap justify-center">
                     {repos.map((item, index) => (
                         <li key={index} className="w-full lg:w-1/3 mt-5">
-                            <Card className="mx-5">
+                            <Card className="mx-5 bg-blue-gray-300 ">
                                 <CardBody>
                                     <Typography variant="h5" color="blue-gray" className="mb-2 flex">
                                         {item.name}

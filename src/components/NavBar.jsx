@@ -113,7 +113,7 @@ export function NavBar() {
     }, []);
 
     return (
-        <div className="">
+        <div className="mb-5 lg:mb-10">
             <Navbar className="lg:mx-auto bg-white">
                 <div className=" flex items-center justify-between text-blue-gray-900">
                     <Typography
